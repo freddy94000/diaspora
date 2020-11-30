@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2eb01a0-c3b3-4da2-8b2f-da490fc0ca86" name="Default Changelist" comment="" />
+    <list default="true" id="f2eb01a0-c3b3-4da2-8b2f-da490fc0ca86" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606765722333</updated>
-      <workItem from="1606765723538" duration="174000" />
+      <workItem from="1606765723538" duration="391000" />
     </task>
     <servers />
   </component>
