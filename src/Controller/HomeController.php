@@ -18,4 +18,13 @@ class HomeController extends AbstractController
 
     }
 
+    /**
+     * @Route("/test")
+     */
+    public function index2Action(): Response
+    {
+        return $this->render('home/index2.html.twig');
+
+    }
+
 }
