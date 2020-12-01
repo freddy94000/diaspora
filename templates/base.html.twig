@@ -3,20 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>{% block title %}Diaspora 238{% endblock %}</title>
+        <title>{% block title %}Diaspora 238: Le Média qui vous informe, vous inspire, vous raconte{% endblock %}</title>
+        <link rel="icon" href="{{ asset('images/favicon.ico') }}" />
         {% block stylesheets %}
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-            <link rel="stylesheet" href="{{ asset('css/index.css') }}">
-            <!--<style type="text/css">
-                @font-face {
-                    font-family: 'Montserrat-Bold';
-                    src:    url({{asset('fonts/Montserrat-Bold.ttf')}});
-                }
-                @font-face {
-                    font-family: 'Montserrat-Regular';
-                    src:    url({{asset('fonts/Montserrat-Regular.ttf')}});
-                }
-            </style>-->
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         {% endblock %}
     </head>
     <body>
@@ -25,28 +16,71 @@
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="{{ asset('media/header.mp4') }}" type="video/mp4">
             </video>
-            <div class="container h-100">
-                <div class="d-flex h-100 text-center align-items-center">
-                    <div class="w-100 text-white">
-                        <img src="{{ asset('images/logo-header.png') }}" />
-                    </div>
+            <div class="container text-center">
+                <div class="logo">
+                    <img src="{{ asset('images/logo-header.png') }}" alt="d238"/>
+                </div>
+                <div class="title">
+                    <h1>Nos ki ta <span class="orange">pinta</span> sol<br/> na nos mundo</h1>
                 </div>
             </div>
         </header>
 
-        <section id="block-title">
-            <div>
-                <h1>Diaspora238, le média qui vous informe,<br /> vous inspire, vous raconte.</h1>
+        <div class="container-fluid text-center orange accroche-header">
+            <div class="d-flex align-items-center justify-content-center">
+                <h2>Diaspora238, le média qui vous informe,<br /> vous inspire, vous raconte.</h2>
             </div>
-        </section>
+        </div>
 
         {% block body %}{% endblock %}
 
-        <section id="block-newsletter">
-            <div>
-                <h3>Abonnez-vous à la newsletter<br />pour recevoir uniquement nos contenus en exclusivité</h3>
+        <div class="container-fluid text-center orange newsletter">
+            <div class="d-flex align-items-center flex-column justify-content-center mb-5">
+                <div class="d-flex align-items-end justify-content-center">
+                    <h3>Abonnez-vous à la newsletter<br /> pour recevoir nos coups de coeur</h3>
+                </div>
+                <div class="d-flex justify-content-center align-items-start">
+                    <form>
+                        <input type="email" class="form-control mb-2 mr-sm-2 bg-orange" id="mail" placeholder="Entrez votre email">
+                        <button type="submit" class="btn btn-primary mb-2">Go</button>
+                    </form>
+                </div>
             </div>
-        </section>
+        </div>
+
+        <div class="container-fluid text-center social">
+            <div class="d-flex align-items-center flex-column justify-content-center mb-5">
+                <div class="d-flex align-items-end justify-content-center">
+                    <h3>Retrouvez-nous sur les réseaux sociaux</h3>
+                </div>
+                <div class="d-flex justify-content-center align-items-start flex-wrap">
+                    <a href="https://www.facebook.com/Diaspora238/" target="_blank"><img src="{{ asset('images/reseaux_01.png') }}" alt="facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCtEuzHPENNOGAoI_vV9KEyw" target="_blank"><img src="{{ asset('images/reseaux_02.png') }}" alt="youtube"></a>
+                    <a href="https://twitter.com/diaspora238" target="_blank"><img src="{{ asset('images/reseaux_03.png') }}" alt="twitter"></a>
+                    <a href="https://www.instagram.com/diaspora_238/" target="_blank"><img src="{{ asset('images/reseaux_04.png') }}" alt="instagram"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center partenaire">
+            <div class="d-flex align-items-center flex-column justify-content-center mb-5">
+                <div class="d-flex align-items-end justify-content-center">
+                    <h3 class="orange">Nos partenaires</h3>
+                </div>
+                <div class="d-flex justify-content-center align-items-start flex-wrap">
+                    <a href="http://ae-tica.fr/" target="_blank"><img src="{{ asset('images/partenaires_01.png') }}" alt="aetica"></a>
+                    <a href="https://fr-fr.facebook.com/Pastelsevy/" target="_blank"><img src="{{ asset('images/partenaires_02.png') }}" alt="Pastel"></a>
+                    <a href="http://www.parisbangkok.fr/" target="_blank"><img src="{{ asset('images/partenaires_03.png') }}" alt="Bangkok"></a>
+                    <a href="https://www.youtube.com/channel/UCrmF9sY7eOaX6avnBfFWDgQ/featured" target="_blank"><img src="{{ asset('images/partenaires_04.png') }}" alt="1000 & Zime"></a>
+                    <a href="https://www.takefiveorchestra.fr/" target="_blank"><img src="{{ asset('images/partenaires_05.png') }}" alt="orchestra"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center footer">
+            <a href="mailto:diaspor238@gmail.com" class="orange">Devenir partenaire</a>
+            <a href="mailto:diaspor238@gmail.com" class="orange">Contact</a>
+        </div>
 
         {% block javascripts %}
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

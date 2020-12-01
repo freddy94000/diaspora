@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src:    url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    background-color: black;
+}
+
+.orange {
+    color: #E6641F;
+}
+
+.bg-orange {
+    background-color: #E6641F;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    background-color: black;
+    height: 650px;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+    padding: 0;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+header .container div.logo {
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 60px auto;
+}
+
+header .container div.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+header .container div.title {
+    display: block;
+}
+
+header .container div.title h1 {
+    font-family: 'Montserrat-Bold';
+    color: white;
+    padding: 0 10px;
+    margin-top: 40px;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('../images/background-header.jpg') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+}
+
+/** Accroche header **/
+
+.accroche-header {
+    background-color: white;
+    display: block;
+    height: 190px;
+    padding: 0;
+}
+
+.accroche-header div {
+    width: 100%;
+    height: 100%;
+}
+
+.accroche-header div h2 {
+    padding: 10px;
+    font-family: 'Montserrat-Bold';
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+/** Contenu **/
+
+.contenu {
+    background-color: black;
+    padding: 0;
+}
+
+.contenu h4 {
+    color: white;
+    font-family: 'Montserrat-Regular';
+    margin-top: 60px;
+}
+
+.contenu h5 {
+    font-family: 'Montserrat-Regular';
+    margin-top: 20px;
+}
+
+.contenu .video-responsive {
+    margin: 60px auto;
+}
+
+@media (max-width: 1023px) {
+    .contenu .video-responsive {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        text-align: center;
+    }
+
+    .contenu .video-responsive iframe {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        max-width: 1024px;
+        max-height: 576px;
+    }
+}
+
+/** Newsletter **/
+.newsletter {
+    background-color: white;
+    display: block;
+    height: 280px;
+    padding: 0;
+}
+
+.newsletter div {
+    width: 100%;
+    height: 100%;
+}
+
+.newsletter div h3 {
+    padding: 10px;
+    font-family: 'Montserrat-Bold';
+    font-size: 26px;
+}
+
+.newsletter form {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 10px;
+
+}
+
+.newsletter input {
+    box-sizing: border-box;
+    border: 0;
+    border-radius: inherit;
+    color: white;
+    padding: 5px 20px;
+    margin: 0;
+    font-family: 'Montserrat-Regular';
+    width: 100%;
+}
+
+.newsletter input:focus {
+    background-color: #E6641F;
+    color: white;
+    border-color: inherit;
+    box-shadow: inherit;
+}
+
+.newsletter button, .newsletter button:active {
+    padding: 5px 20px;
+    background-color: #E6641F;
+    color: white;
+    border-radius: 0;
+    font-family: 'Montserrat-Bold';
+    margin-top: 10px;
+    border: 1px solid #E6641F;
+}
+
+.newsletter button:hover {
+    background-color: white;
+    border: 1px solid #E6641F;
+    color: #E6641F;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: white;
+}
+
+.form-control:-moz-placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+    color: white;
+}
+
+/** Social **/
+.social {
+    height: 300px;
+    display: block;
+    padding: 0;
+    background: url("../images/background-bloc-nwsletter.jpg") #E6641F repeat-x center center;
+}
+
+.social div {
+    width: 100%;
+    height: 100%;
+}
+
+.social div div h3 {
+    color: white;
+    padding: 10px;
+    font-family: 'Montserrat-Bold';
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.social div div a {
+    width: 80px;
+    height: 80px;
+}
+
+.social div div a img {
+    width: 100%;
+    height: 100%;
+}
+
+/** partenaire **/
+.partenaire {
+    height: 300px;
+    display: block;
+    padding: 0;
+    background-color: black;
+}
+
+.partenaire div {
+    width: 100%;
+    height: 100%;
+}
+
+.partenaire div div h3 {
+    padding: 10px;
+    font-family: 'Montserrat-Bold';
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.partenaire div div a {
+    width: 120px;
+}
+
+.partenaire div div a img {
+    width: 100%;
+}
+
+/** footer **/
+.footer {
+    margin: 20px 0;
+    padding: 0;
+}
+
+.footer a {
+    margin: 0 20px;
+}
+
+.footer a:hover {
+   color: #E6641F;
+}
+
+
