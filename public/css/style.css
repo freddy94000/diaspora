@@ -204,7 +204,7 @@ header .container div.title h1 {
     box-shadow: inherit;
 }
 
-.newsletter button, .newsletter button:active {
+.newsletter button, .newsletter button:active, .newsletter button:visited {
     padding: 5px 20px;
     background-color: #E6641F;
     color: white;
@@ -214,10 +214,11 @@ header .container div.title h1 {
     border: 1px solid #E6641F;
 }
 
-.newsletter button:hover {
+.newsletter button:hover, .newsletter button:focus {
     background-color: white;
     border: 1px solid #E6641F;
     color: #E6641F;
+    border-radius: 0;
 }
 
 .form-control::-webkit-input-placeholder {
