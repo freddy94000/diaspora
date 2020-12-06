@@ -23,6 +23,10 @@ body {
     background-color: #E6641F;
 }
 
+.alert {
+    margin-bottom: 0;
+}
+
 /* Header */
 
 header {
@@ -291,7 +295,7 @@ header .container div.title h1 {
 }
 
 .partenaire div div a {
-    width: 120px;
+    width: 121px;
 }
 
 .partenaire div div a img {
@@ -312,4 +316,9 @@ header .container div.title h1 {
    color: #E6641F;
 }
 
+/** Newsletter Form **/
+.newsletter-form .table {
+    margin-bottom: 0;
+    color: white;
+}
 
