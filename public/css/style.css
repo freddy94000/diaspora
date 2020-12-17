@@ -300,17 +300,13 @@ header .container div.title h1 {
 .partenaire {
     height: 300px;
     display: block;
-    padding: 0;
     background-color: black;
+    padding: 40px 0 20px 0;
 }
 
 .partenaire div {
     width: 100%;
     height: 100%;
-}
-
-.partenaire div div {
-    padding-top: 50px;
 }
 
 .partenaire div div h3 {
